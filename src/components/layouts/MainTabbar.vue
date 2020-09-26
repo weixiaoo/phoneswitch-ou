@@ -14,7 +14,7 @@
             <div class="style-size">动态</div>            
         </router-link>
         <router-link to="/watching" tag="li">
-            <div class="iconfont">&#xe779;</div>
+            <div class="iconfont">&#xe748;</div>
             <div class="style-size">看点</div>
         </router-link>
         <router-link to="/mine" tag="li">
@@ -32,10 +32,6 @@ export default {
 </script>
 
 <style scoped>
-    * {
-        padding: 0;
-        margin: 0;
-    }
     #main-group{
        height: 100%;
        width: 100%;
@@ -47,7 +43,7 @@ export default {
         width: 100%;
         height: 40px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         background-color: #eee;
 	}
