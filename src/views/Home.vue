@@ -12,6 +12,7 @@
         <i class="iconfont i-right" @click="clear" v-show="isshowx">&#xe749;</i>
     </div>
   </div>
+  <continu-play></continu-play>
   <h2>首页</h2>
 </div>
 
@@ -19,11 +20,13 @@
 
 <script>
 import TopNav from '../components/common/TopNav'
+import ContinuPlay from '../components/common/ContinuPlay'
 
 export default {
   name:'Hone',
   components: {
-    TopNav
+    TopNav,
+    ContinuPlay
   },
   data() {
     return {
@@ -55,7 +58,7 @@ export default {
     position: relative;
     height: 30px;
     line-height: 30px;
-    margin: 5px auto 0;
+    margin: 5px auto;
     width: 98%;
 }
 .search-bar {
