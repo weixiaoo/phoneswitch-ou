@@ -13,7 +13,16 @@
     </div>
   </div>
   <continu-play></continu-play>
-  <h2>首页</h2>
+  <!-- <h2>首页</h2> -->
+
+  <div class="top-lun">
+    <ul>
+      <li v-for="item in imgLun" :key="item.index" id="slider">
+        <a href=""><img :src="item.imgUrl" alt=""><div class="lun-text">{{item.text}}</div></a>        
+      </li>
+    </ul>
+  </div>
+
 </div>
 
 </template>
@@ -31,7 +40,24 @@ export default {
   data() {
     return {
       wenziSearch:'',
-      isshowx:true
+      isshowx:true,
+      startPointX:0,
+      changePointX:0,
+      showIndex:0,
+      imgLun:[
+        {text:'01','imgUrl':require('@/assets/img/toplun/01-1.jpg')},
+        {text:'02','imgUrl':require('@/assets/img/toplun/02-1.jpg')},
+        {text:'03','imgUrl':require('@/assets/img/toplun/03-1.jpg')},
+        {text:'04','imgUrl':require('@/assets/img/toplun/04-1.jpg')},
+        {text:'05','imgUrl':require('@/assets/img/toplun/05-1.jpg')},
+        {text:'06','imgUrl':require('@/assets/img/toplun/06-1.jpg')},
+        {text:'07','imgUrl':require('@/assets/img/toplun/07-1.jpg')},
+        {text:'08','imgUrl':require('@/assets/img/toplun/08-1.jpg')},
+        {text:'09','imgUrl':require('@/assets/img/toplun/09-1.jpg')},
+        {text:'10','imgUrl':require('@/assets/img/toplun/10-1.jpg')},
+        {text:'11','imgUrl':require('@/assets/img/toplun/11-1.jpg')},
+        {text:'12','imgUrl':require('@/assets/img/toplun/12-1.jpg')}
+      ]
     }
   },
   methods: {
@@ -90,5 +116,42 @@ export default {
     right: 0;
     font-size: 20px;
     color: #B2B2B2;
+}
+
+/* top-lun */
+.top-lun {
+    width: 98%;
+    height: 80px;
+    margin:10px auto;
+}
+.top-lun ul {
+    width: 98%;
+    height: 80px;
+    overflow: hidden;
+    display: flex;
+    justify-content:first baseline;
+    overflow-x:scroll;
+    -webkit-overflow-scrolling : touch; 
+}
+.top-lun ul::-webkit-scrollbar {
+    display: none;
+}
+.top-lun ul li {
+    float: left;
+    height: 50px;
+    width: 50px;
+    margin: 0px 5px;
+}
+.top-lun ul li a {
+    text-decoration: none;
+}
+.top-lun ul li a img{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin: 4px 0px;
+}
+.lun-text {
+    text-align: center;
 }
 </style>

@@ -4,9 +4,6 @@
           <div class="left" @click="goback"><slot name="top-left"></slot></div>
           <div class="center"><slot name="top-center">{{title}}</slot></div>
           <div class="right"><slot name="top-right"></slot></div>
-          <!-- <slot name="top-left"></slot>
-          <slot name="top-center">{{title}}</slot>
-          <slot name="top-right"></slot> -->
       </div>
       
   </div>

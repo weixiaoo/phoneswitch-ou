@@ -56,14 +56,14 @@ export default {
 <style scoped>
     #continu-play {
         width: 100%;
-        height: 250px;
+        height: 150px;
         margin: 0 auto;
         overflow: hidden;
         position: relative;
     }
     .pictures,img {
         width: 100%;
-        height: 250px;
+        height: 150px;
     }
     li {
         position: absolute;

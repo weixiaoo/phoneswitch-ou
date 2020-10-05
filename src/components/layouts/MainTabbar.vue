@@ -13,7 +13,7 @@
             <div class="iconfont">&#xe7c9;</div>
             <div class="style-size">动态</div>            
         </router-link>
-        <router-link to="/watching" tag="li">
+        <router-link to="/watching/topNews" tag="li">
             <div class="iconfont">&#xe748;</div>
             <div class="style-size">看点</div>
         </router-link>
@@ -37,7 +37,7 @@ export default {
        width: 100%;
     }
     .main-bottom{
-		position:absolute;
+		position:fixed;
         left: 0;
         bottom: 0;
         width: 100%;
@@ -48,7 +48,6 @@ export default {
         background-color: #eee;
 	}
     .main-bottom li {
-        list-style: none;
         padding: 0px 28px;
     }
     .main-bottom .iconfont {
